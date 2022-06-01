@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <title>Galeria|Hurra Pampa</title>
         <link rel="stylesheet" href="../estilos/styles.css"> <!--linkea con el css-->
        
     </head>
     <body>
        <div class="contenedor-general">
-       <header class="header">  <!--aca comienza el header-->
-        <h1 class="logo"><b>HURRA PAMPA</b> </h1>   <!--aun no tengo logo de la empresa asi que puse texto provisoriamente-->
-            <nav>
-              <ul>
-                <li><a href="../index.html">Inicio</a></li>  
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="./turismo.html">Turismo</a></li>
-                <li><a href="./ubicacionycontacto.html">Ubicacion y contacto</a></li>  
-              </ul>
-            </nav> 
-        </header>
+        <header class="header">  <!--aca comienza el header-->
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand logo" href="#">HURRA PAMPA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav navbar-dark align-items-center">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                    <a class="nav-link active" aria-current="page" href="#">Galeria</a>
+                    <a class="nav-link" href="./turismo.html" >Turismo</a>
+                    <a class="nav-link" href="./ubicacionycontacto.html" >Ubicacion y contacto</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
         <main>  <!--aca empieza el main-->
             <div class="galeria-container">
                 <div class="galeria-item">
@@ -92,5 +100,6 @@
           </div>
         </footer>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>
