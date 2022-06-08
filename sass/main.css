@@ -1,0 +1,246 @@
+* {
+  /*reset del CSS*/
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0efedf6;
+  font-family: "Old Standard TT", serif;
+  font-size: 1rem;
+  line-height: 1.4em;
+  color: #333;
+  height: 100vh;
+}
+
+body .contenedor-general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*header*/
+.header {
+  background-color: rgba(79, 92, 97, 0.793);
+  padding: 3rem;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.header .logo {
+  color: white;
+  font-size: 1.8em;
+}
+
+.header .logo2 {
+  color: white;
+}
+
+.header .navbar-brand {
+  padding-bottom: 0px;
+  margin-right: 0px;
+}
+
+.header .nav-link {
+  list-style: none;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: end;
+  text-decoration: none;
+  color: white;
+}
+
+.header:hover {
+  color: #3a9b3a;
+}
+
+/*main*/
+.main {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 3rem;
+}
+
+.main .bienvenido {
+  font-style: italic;
+  text-align: center;
+  color: #634e3f;
+}
+
+/*boton flotante whatsapp*/
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #10df52;
+  border-radius: 50px;
+  text-align: center;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp .icon-whatsapp {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-wsp:hover {
+  opacity: 0.6;
+}
+
+/*estilo del carousel*/
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  max-height: 600px;
+}
+
+.mapa {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*inicio del footer*/
+.footer {
+  background-color: rgba(199, 186, 168, 0.853);
+  margin-top: 30rem;
+  padding-top: 40px;
+  color: white;
+  width: 100%;
+}
+
+.footer .contenedor-footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .contenedor-footer a {
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.footer .contenedor-footer a:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.footer .contenedor-footer .columna1 {
+  max-width: 400px;
+}
+
+.footer .contenedor-footer .columna1 .contacto {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .contenedor-footer .columna1 h2 {
+  font-size: 20px;
+}
+
+.footer .contenedor-footer .columna1 img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer .contenedor-footer .columna1 label {
+  margin-top: 10px;
+  margin-left: 10px;
+  max-width: 150px;
+}
+
+.footer .contenedor-footer .columna2 {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .contenedor-footer .columna2 h2 {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+.footer .contenedor-footer .columna3 {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .contenedor-footer .columna3 h2 {
+  font-size: 20px;
+}
+
+.footer .contenedor-footer .columna3 .redes {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .contenedor-footer .columna3 .redes img {
+  width: 32px;
+  height: 32px;
+  margin: 0 20px 0 0px;
+}
+
+.footer .contenedor-footer .columna3 .booking img {
+  width: 300px;
+  height: 100px;
+}
+/*# sourceMappingURL=main.css.map */
