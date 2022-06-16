@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   /*reset del CSS*/
   margin: 0;
@@ -28,7 +29,10 @@ body {
     color: white;
     font-size: 1.8em; }
   .header .logo2 {
-    color: white; }
+    color: white;
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 0px; }
   .header .navbar-brand {
     padding-bottom: 0px;
     margin-right: 0px; }
@@ -48,7 +52,6 @@ body {
   display: grid;
   padding-top: 3rem; }
   .main .bienvenido {
-    font-style: italic;
     text-align: center;
     color: #634e3f; }
 
@@ -60,7 +63,7 @@ body {
   line-height: 55px;
   bottom: 30px;
   right: 30px;
-  background: #10df52;
+  background: #10DF52;
   border-radius: 50px;
   text-align: center;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
@@ -71,12 +74,20 @@ body {
   .btn-wsp:hover {
     opacity: 0.6; }
 
-/*estilo del carousel*/
-.carousel-inner {
+/*para preservar el aspecto para distintos tamaños de pantalla*/
+.carousel .carousel-item {
   height: 500px; }
-  .carousel-inner img {
-    width: 100%;
-    max-height: 600px; }
+
+.carousel-item img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px; }
+
+.inicio_h2 {
+  padding: 16px;
+  text-align: center; }
 
 .mapa {
   position: relative;
@@ -90,10 +101,169 @@ body {
     width: 100%;
     height: 100%; }
 
+/*seccion servicios*/
+.title-servicios {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.container-servicios {
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+  .container-servicios .card-servicios {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .container-servicios .card-servicios:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+    .container-servicios .card-servicios img {
+      width: 330px;
+      height: 220px; }
+
+/* ESTILOS DE LA GALERIA DE IMAGENES*/
+.galeria-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-rows: 200px;
+  gap: 15px;
+  padding: 20px;
+  justify-content: space-around; }
+  .galeria-container .galeria-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out; }
+    .galeria-container .galeria-item:hover {
+      filter: opacity(0.9);
+      transform: scale(1.2); }
+    .galeria-container .galeria-item img {
+      width: 250px;
+      height: 200px;
+      object-fit: cover; }
+
+/*seccion ubicacion y contacto*/
+/*ESTILO DEL FORMULARIO*/
+#form {
+  width: 800px;
+  height: auto;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 10px; }
+  #form h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  #form input {
+    border: none;
+    padding: 3px; }
+  #form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  #form #boton {
+    background: #9b7cc9;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 600px;
+    margin-bottom: 10px; }
+    #form #boton:hover {
+      cursor: pointer;
+      color: #e7c799;
+      background: #333; }
+
+.ubicacion {
+  display: flex;
+  margin: auto; }
+  .ubicacion p {
+    padding: 90px; }
+
+/*seccion turismo*/
+.recomendados {
+  transition: all 0.25s; }
+  .recomendados:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+/*utilizacion de extend en las cartas de mi proyecto*/
+.carta, .card {
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.1); }
+
+.imagen, .card > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px; }
+
+.titulo, .card > h3 {
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 8px;
+  opacity: 0.85; }
+
+.texto, .card > p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.75; }
+
+.card > img {
+  width: 350px;
+  height: 300px; }
+
+.card > h3 {
+  font-style: italic; }
+
+.fuenteChica {
+  font-size: 1rem;
+  font-weight: 100;
+  font-style: none; }
+
+.fuenteMediana {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: none; }
+
+.fuenteGrande {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-style: italic; }
+
+/*utilizo un mapa para generar las clases que definen el color de fondo*/
+.bg-header {
+  background-color: rgba(79, 92, 97, 0.793); }
+
+.bg-main {
+  background-color: #f0efedf6; }
+
+.bg-carta {
+  background-color: #ffffff; }
+
+.bg-footer {
+  background-color: rgba(199, 186, 168, 0.853); }
+
 /*inicio del footer*/
 .footer {
   background-color: rgba(199, 186, 168, 0.853);
-  margin-top: 30rem;
+  margin-top: 15rem;
   padding-top: 40px;
   color: white;
   width: 100%; }

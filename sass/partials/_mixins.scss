@@ -1,0 +1,20 @@
+@mixin fuentes($size, $weight, $style) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    
+}
+
+.fuenteChica{
+    @include fuentes(1rem, 100, none);
+}
+
+.fuenteMediana{
+    @include fuentes(2rem, 400, none);
+
+}
+
+.fuenteGrande{
+    @include fuentes(2.5rem, 600, italic);
+
+}

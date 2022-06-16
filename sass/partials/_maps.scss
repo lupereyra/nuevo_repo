@@ -1,0 +1,26 @@
+/*utilizo un mapa para generar las clases que definen el color de fondo*/
+$colorFondo: (
+    "header": $colorHeader,
+    "main": $colorMain,
+    "carta": $colorCarta,
+    "footer": $colorFooter,
+);
+
+.bg-header{
+    background-color: map-get($colorFondo, header);
+}
+
+.bg-main{
+    background-color: map-get($colorFondo, main);
+}
+
+.bg-carta{
+    background-color: map-get($colorFondo, carta);
+}
+
+.bg-footer{
+    background-color: map-get($colorFondo, footer);
+}
+
+
+

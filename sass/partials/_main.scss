@@ -3,11 +3,11 @@
     display: grid;
     padding-top: 3rem;
     .bienvenido{
-        font-style: $estiloTitulo;
         text-align: center;
         color: #634e3f;
     }
 }
+
 
 /*boton flotante whatsapp*/
 .btn-wsp{
@@ -26,24 +26,11 @@
         width: 30px;
         height: 30px;
     }
-    &:hover{
+    &:hover {
         opacity: 0.6;
     }
 }
 
-
-
-/*estilo del carousel*/
-/*
-.carousel-inner{
-    height: 500px;
-    img {
-    width: 100%;
-    max-height: 600px;
-    }
-
-}
-*/
 
 /*para preservar el aspecto para distintos tamaños de pantalla*/
 
@@ -78,3 +65,128 @@
     }
     
 }
+
+/*seccion servicios*/
+.title-servicios{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-servicios{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    .card-servicios{
+        width: 330px;
+        height: 430px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all 0.25s;
+        &:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            width: 330px;
+            height: 220px;
+        }
+    }    
+}
+
+ /* ESTILOS DE LA GALERIA DE IMAGENES*/
+  
+ .galeria-container{
+     display: grid;
+     grid-template-columns: repeat(auto-fill, 250px);
+     grid-auto-rows: 200px;
+     gap: 15px;
+     padding: 20px;
+     justify-content: space-around;
+     .galeria-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+           filter: opacity(0.9);
+           transform: scale(1.2);
+        }
+        img {
+           width: 250px;
+           height: 200px;
+           object-fit: cover;
+         }
+    }
+   
+ }
+
+ /*seccion ubicacion y contacto*/
+ /*ESTILO DEL FORMULARIO*/
+#form{
+    width: 800px;
+    height: auto;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 10px;
+    h2{
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input{
+        border: none;
+        padding: 3px;
+    }
+    textarea{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        border: none;
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+    }
+    #boton{
+        background: #9b7cc9;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 600px;
+        margin-bottom: 10px;
+        &:hover{
+            cursor: pointer;
+            color: #e7c799;
+            background: #333;
+        }
+    }
+}
+
+.ubicacion{
+    display: flex;
+    margin: auto;
+    p{
+        padding: 90px;
+    }
+}
+
+/*seccion turismo*/
+
+
+.recomendados{
+    transition: all 0.25s;
+    &:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+}
+
