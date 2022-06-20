@@ -9,7 +9,9 @@
     <meta name="keywords" content="cabañas bosque playa naturaleza vacaciones">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/main.css"> <!--linkea con mi css-->
+     <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css"> <!--linkea con mi css-->
 </head>
 <body>
   <div class="contenedor-general">
@@ -38,8 +40,9 @@
     <main class="main bg-main">  <!--aca empieza el main-->
       <h2 class="fuenteGrande bienvenido">Disfruta de la playa y el bosque en un solo lugar</h2>
       <h3 class="fuenteGrande bienvenido">Bienvenidos</h3>
-      <a href="https://wa.me/542235431222" class="btn-wsp" target="_blank"><img src="./assets/whatsapp.svg" class="icon-whatsapp" > <!--boton flotante de wsp-->
-      </a> 
+      <a href="https://api.whatsapp.com/send?phone=+5492235431222" class="btn-wsp" target="_blank"> <!--boton flotante whatsapp-->
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
       <div class="container-fluid">  <!--aca comienza el carousel-->
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -97,44 +100,43 @@
        </section>
      
     </main>
-    <footer class="footer bg-footer"> <!--comienzo del footer-->
+    <footer class="footer"> <!--inicio footer-->
       <div class="contenedor-footer">
-          <div class="columna1">
-              <h2>
-              Contactanos
-              </h2>
-              <div class="contacto">
-                <a href="https://goo.gl/maps/4zSUgchpb6JZvBfcA" target="_blank" rel="noopener noreferrer"><img src="./assets/geo-alt.svg"></a>
-                <label> Piedrabuena y Juan de Garay</label>
-              </div>
-              <div class="contacto">
-                  <a href="https://wa.me/542235431222" target="_blank" rel="noopener noreferrer"><img src="./assets/whatsapp.svg"></a>
-                  <label>+54 223 543 1222</label>
-              </div>
-                  <div class="contacto">
-                    <a href="mailto:reservas.hurrapampa@gmail.com" target="_blank" rel="noopener noreferrer"><img src="./assets/envelope.svg"></a>
-                  <label> reservas.hurrapampa@gmail.com</label>
-               </div>
-          </div>
-          <div class="columna2">
-              <h2>HURRA PAMPA</h2>
-              <h3 class="logo2">BOSQUE Y PLAYA</h3>
-          </div>
-          <div class="columna3">
-            <h2>Visita nuestras redes sociales</h2>
-            <div class="redes">
-                <a href="https://www.facebook.com/HurraPampa/?hl=es" target="_blank" rel="noopener noreferrer"><img src="./assets/facebook.svg"></a>
-            
-                <a href="https://www.instagram.com/hurra_pampa/?hl=es" target="_blank" rel="noopener noreferrer"><img src="./assets/instagram.svg"></a>
+        <div class="columna1">
+            <h2>
+            Contactanos
+            </h2>
+            <div class="contacto">
+              <a href="https://goo.gl/maps/4zSUgchpb6JZvBfcA" target="_blank"><img src="./assets/geo-alt.svg"></a>
+              <label> Piedrabuena y Juan de Garay</label>
             </div>
-            <h2>Reconocimientos</h2>
-            <div class="booking">
-                 <img src="./assets/Booking-2022.png" alt="">
+            <div class="contacto">
+                <a href="https://wa.me/542235431222" target="_blank"><img src="./assets/whatsapp.svg"></a>
+                <label>+54 223 543 1222</label>
             </div>
+                <div class="contacto">
+                  <a href="mailto:reservas.hurrapampa@gmail.com" target="_blank"><img src="./assets/envelope.svg"></a>
+                <label> reservas.hurrapampa@gmail.com</label>
+             </div>
+        </div>
+        <div class="columna2">
+            <h2>HURRA PAMPA</h2>
+            <h3 class="fuenteChica">BOSQUE Y PLAYA</h3>
+        </div>
+        <div class="columna3">
+          <h2>Visita nuestras redes sociales</h2>
+          <div class="redes">
+              <a href="https://www.facebook.com/HurraPampa/?hl=es" target="_blank"><img src="./assets/facebook.svg"></a>
+          
+              <a href="https://www.instagram.com/hurra_pampa/?hl=es" target="_blank"><img src="./assets/instagram.svg"></a>
           </div>
-      </div>
-    </footer>
-  
+          <h2>Reconocimientos</h2>
+          <div class="booking">
+               <img src="./assets/booking.png" alt="">
+          </div>
+        </div>
+    </div>
+  </footer>  
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

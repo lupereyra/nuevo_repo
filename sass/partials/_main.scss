@@ -12,22 +12,22 @@
 /*boton flotante whatsapp*/
 .btn-wsp{
     position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: #10DF52;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
+    font-size: 35px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
-    .icon-whatsapp{
-        width: 30px;
-        height: 30px;
-    }
+    transition: all 300ms ease;
     &:hover {
-        opacity: 0.6;
+        color: #25d366;
+        background: #fff;
     }
 }
 
@@ -77,7 +77,7 @@
     height: 430px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     .card-servicios{
         width: 330px;
@@ -85,7 +85,7 @@
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         overflow: hidden;
-        margin: 20px;
+        margin: 15px;
         text-align: center;
         transition: all 0.25s;
         &:hover{
@@ -96,6 +96,7 @@
             width: 330px;
             height: 220px;
         }
+                     
     }    
 }
 
@@ -124,6 +125,10 @@
          }
     }
    
+ }
+ .galeria{
+     padding: 20px;
+     text-align: center;
  }
 
  /*seccion ubicacion y contacto*/
@@ -171,13 +176,6 @@
     }
 }
 
-.ubicacion{
-    display: flex;
-    margin: auto;
-    p{
-        padding: 90px;
-    }
-}
 
 /*seccion turismo*/
 
@@ -187,6 +185,9 @@
     &:hover{
         transform: translateY(-15px);
         box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+    img{
+        margin-bottom: 15px;
     }
 }
 
