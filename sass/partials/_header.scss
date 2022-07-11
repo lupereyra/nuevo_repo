@@ -1,7 +1,6 @@
 /*header*/
 .header{
-    background-color: $colorHeader;
-    padding: 3rem;
+    background-position: bottom;
     left:0;
     top:0;
     right:0;
@@ -41,7 +40,10 @@
         font-size: 1em;
     }
     .logo2{
-        font-size: 0.6em;
+        font-size: 0.2em;
+    }
+    .navbar-nav{
+        margin-top: 20px;
     }
     
 }

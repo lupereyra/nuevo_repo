@@ -1,13 +1,13 @@
 
 
-/*probando un nuevo footer*/
+/*estilos del footer*/
 .footer {
     background-color: $colorFooter;
     width: 100%;
     font-family: $fuenteGeneral;
     font-size: 14px;
     padding: 40px;
-    margin-top: 50px;
+    margin-top: 40px;
    
   }
   
@@ -25,11 +25,11 @@
     width: 33%;
     padding-right: 15px;
   }
-  
-  .footer .about {
+   
+  .footer .about span{
     line-height: 20px;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: normal;
     margin: 0;
   }
@@ -37,7 +37,6 @@
   .footer .about {
     display: block;
     color: #ffffff;
-    font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -53,7 +52,7 @@
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
@@ -71,7 +70,7 @@
   .footer .footer-center i {
     background-color: #33383b;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -96,7 +95,7 @@
   .footer .footer-center p span {
     display: block;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 2;
   }
   

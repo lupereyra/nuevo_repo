@@ -15,9 +15,9 @@
 </head>
 <body>
   <div class="contenedor-general">
-    <header class="header bg-header">  <!--aca comienza el header-->
+    <header class="header bg-header"  style="background-image: url(./assets/coladezorro.jpg);">  <!--aca comienza el header-->
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid flex-column justify-content-center">
           <div class="d-flex flex-column align-items-center">
           <h1 class="navbar-brand logo" href="#">HURRA PAMPA</h1>
           <h2 class="logo2">BOSQUE Y PLAYA</h2>
@@ -38,12 +38,13 @@
       </nav>
     </header>
     <main class="main bg-main">  <!--aca empieza el main-->
-      <h2 class="fuenteGrande bienvenido">Disfruta de la playa y el bosque en un solo lugar</h2>
-      <h3 class="fuenteGrande bienvenido">Bienvenidos</h3>
+       
       <a href="https://api.whatsapp.com/send?phone=+5492235431222" class="btn-wsp" target="_blank"> <!--boton flotante whatsapp-->
         <i class="fa fa-whatsapp icono"></i>
-    </a>
-      <div class="container-fluid">  <!--aca comienza el carousel-->
+      </a>
+      <h2 class="fuenteGrande inicio_h2">Cabañas en Mar de las Pampas</h2> 
+     
+     <div class="container-fluid">  <!--aca comienza el carousel-->
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
@@ -53,13 +54,13 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./assets/bosque.jpeg" class="d-block w-100" alt="bosque">
+              <img src="./assets/carou1.jpg" class="d-block w-100 imgcrr" alt="bosque">
             </div>
             <div class="carousel-item">
-              <img src="./assets/slide2.jpg" class="d-block w-100" alt="bosque">
+              <img src="./assets/carousel2.jpg" class="d-block w-100" alt="bosque">
             </div>
             <div class="carousel-item">
-              <img src="./assets/playa.jpg" class="d-block w-100" alt="playa">
+              <img src="./assets/carousel1.jpg" class="d-block w-100 imgcrr" alt="playa">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -74,7 +75,7 @@
       </div>
         
         <section class="inicio container"> 
-            <h2 class="fuenteGrande inicio_h2">Cabañas en Mar de las Pampas</h2> 
+          <h2 class="fuenteGrande inicio_h2">Bienvenidos</h2>            
             <div class="inicio_contenedor row">
                <div class="card bg-carta inicio_carta col-lg-6 d-flex flex-column align-items-center">
                     <img class=" img_inicio img-fluid" src="./assets/fachada-linda.jpg" alt="foto fachada complejo">
@@ -88,9 +89,14 @@
                <div class="card bg-carta inicio_carta col-lg-6 d-flex flex-column align-items-center">
                       <img class="img-inicio img-fluid" src="./assets/hurrainicio.jpg" alt="foto living">
                       <h3 class="fuenteMediana inicio_h3 p-3">Servicios</h3>
-                      <p class="fuenteChica inicio_desc">Departamento de 2 ambientes de 60 m2 en una sola planta. Cocina comedor integrado y living, 1 cama de 1 plaza mas cama carrito de 1 plaza. Baño completo. Dormitorio con cama matrimonial. Cocina totalmente equipada (4 hornallas y horno), microondas, heladera con freezer, cafetera, tostadora, pava electrcia y vajilla para 4 personas. TV LCD 32". Caja de seguridad para guardar tus bienes y sistema de alarma monitoreada. Calefacción por radiadores (solo en los meses frios). Ventilador. Parrilla, balcon o deck individual. Servicio gratuito de WiFi en la cabaña y en los espacios comunes, para que puedas mantenerte conectado. No esta permitido el ingreso con mascotas.</p>
+                      <p class="fuenteChica inicio_desc"><b></b> - Departamentos de 2 ambientes en una sola planta.<br> - Cocina comedor integrado, living y baño completo. <br> - Dormitorio con cama matrimonial, TV LCD 32".<br> - Cocina totalmente equipada, microondas, heladera con freezer, cafetera, tostadora, pava eléctrica y vajilla<br> - Caja de seguridad para guardar tus bienes y sistema de alarma monitoreada. <br> - Calefacción por radiadores (solo en los meses fríos). Ventilador. <br> - Parrilla, balcón o deck individual. <br> - Servicio gratuito de WiFi en la cabaña y en los espacios comunes, para que puedas mantenerte conectado. <br>  -No está permitido el ingreso con mascotas.</p>
                 </div>
             </div>
+        </section>
+        <section class="reserva d-flex flex-column align-items-center pb-3">
+          <h3 class="inicio_h2">Playa y bosque en un mismo lugar</h3>
+          <h5 class="sitio">El sitio ideal para tus vacaciones</h5>
+          <a href="./vistas/ubicacionycontacto.html"><input type="button" value="Reservar" id="boton"></a>
         </section>
         <section class="inicio2"> 
           <h2 class="fuenteGrande inicio_h2">Donde estamos | Google Map</h2>
@@ -106,7 +112,7 @@
           <p class="about">
             <span> Reconocimientos</span>
           </p>
-          <img src="../assets/booking.png" alt="BookingAward">
+          <img src="./assets/booking.png" alt="BookingAward">
           <div class="icons">
             <a href="https://www.facebook.com/HurraPampa/?hl=es" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://twitter.com/HurraPampa" target="_blank"><i class="fa fa-twitter"></i></a>
